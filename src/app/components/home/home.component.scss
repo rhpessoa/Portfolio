@@ -1,0 +1,100 @@
+@import '../../../styles.scss';
+
+.home {
+    height: 85vh;
+    display: flex;
+    gap: 5%;
+  }
+  
+  .home__image-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+  }
+
+  .home__image {
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    background-image: url('../../../assets/images/profile.jpeg');
+    background-size: cover;
+   
+  }
+
+  /* Content Area */
+  .home__content-flex{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+  }
+  .home__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+  }
+  
+  .home__content__greeting {
+    color: #555555;
+    font-weight: 600;
+  }
+  
+  .home__content__name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .home__content__job-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #555555;
+  }
+  
+  .home__content__actions {
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .home__content__actions__download-cv,
+  .home__content__actions__contact {
+    width: 8.2rem;
+    padding: 0.55rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+  }
+  .home__content__actions__download-cv:hover{
+    color: white;
+    background-color: rgb(53, 53, 53);
+  }
+  .home__content__actions__contact:hover{
+    color: white;
+    background-color: black;
+  }
+  
+  .home__content__social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  
+  .home__content__social-links__linkedin-icon,
+  .home__content__social-links__github-icon {
+    transition: all 100ms ease;
+    width: 2rem;
+    height: 2rem;
+  }
+  .home__content__social-links__linkedin-icon:hover,
+  .home__content__social-links__github-icon:hover{
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+ 
